@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>gdoloma</title>
+ </head>
+ <body>
+ 
+  <script type="text/javascript">
+    document.write("<br /><h1>ex3</h1><br />");
+    document.write("<i>Я учусь программировать на языке <b>JavaScript</b></i><br />");
+
+    document.write("<br /><h1>ex4</h1><br />");
+    var age = 21;
+    document.write("<i>Мой возраст " + age + " лет</i><br />");
+
+    document.write("<br /><h1>ex5</h1><br />");
+    var name = "Гриша";
+    var man = true;
+    document.write("<i>Меня зовут  " + name + "</i><br />");
+    document.write("<i> Я мужчина?   <b>" + man + "</b></i><br />");
+
+    document.write("<br /><h1>ex6</h1><br />");
+    document.write((5+7) / ((12 - 5.5) * (5 - 8 * 12)));
+    document.write("<br />");
+    var x = 5;
+    var y = 7;
+    var z = 12;
+    var t = 5.5;
+    var r  = 8;
+    document.write( (x + y) / ((z - t) * (x - r * z)));
+    document.write("<br />");
+    var s1= "17";
+    var s2 = "-5";
+    document.write("s1 + s2  = "+ s1 + s2  + "<br/>" );
+    document.write("Number(s1) + Number(s2)  = "+ (Number(s1) + Number(s2)) + "<br/>" );
+
+    document.write("<br /><h1>ex7</h1><br />");
+    man = true;
+    if(man == true){
+      document.write("Man<br />");
+    }else{
+      document.write("Woman<br />");
+    }
+    age =80;
+    if(age < 18){
+       document.write("У меня юный возраст<br />");
+    }else if(age < 30){
+       document.write("Я молодой<br />");
+    } else if (age < 50){
+       document.write("Я взрослый<br />");
+    } else {
+        document.write("Я зрелый<br />");
+    }
+
+    document.write("<br /><h1>ex8</h1><br />");
+    document.write("<table border=\"1\"><caption>Таблица умножения</caption><tr>");
+    for (var i = 0; i <= 10; i++) {
+      for (var j = 0; j <= 10; j++) {
+        if(i == 0){
+          if(j == 0)
+            document.write("<th></th>");
+          else
+            document.write("<th>" + j + "</th>");
+        } else {
+          if(j == 0)
+            document.write("<th>"+ i +"</th>");
+          else
+            document.write("<td>" + i*j+ "</td>");
+        }
+
+     
+      }
+       document.write("</tr><tr>");
+    }
+    document.write("</tr>");
+    document.write("</table>");
+
+    document.write("<br /><h1>ex9</h1><br />");
+
+    var number = Number(prompt("Введите число"));
+    while(!(number > 0)){
+      alert("Error");
+      number = Number(prompt("Введите число"));
+    }
+    var sum = 0 ;
+    for(var i = 1 ; i < number; i++){
+      sum += i;
+    }
+    alert("Sum = "+ sum );
+    
+ 
+
+  </script>
+
+ </body>
+</html>
